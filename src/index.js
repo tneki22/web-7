@@ -1,14 +1,12 @@
-import React from 'react';
+// index.js
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from './app/App';
+import App from './components/App';
 
-// Получаем точку вмонтирования нашего приложения
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Вызываем метод вмонтирования приложения
 root.render(
-  <React.StrictMode>
-    {/* // Рисуем компоненту приложения */}
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
